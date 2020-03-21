@@ -10,8 +10,19 @@ Class diagrams (including method names) and a sketch of how different parts of t
 application interact will suffice. No codes required for this part.
 
 ## Solution for problem #1   
+For the following problem going to provide 3 UML diagrams:
+- Package diagram to show actors and application layers and how they depend on each other
+- Activity diagram to show flow, logical step decision chain
+- Class diagram to show low level static structure of classifiers in a system and their relationships
 
+### Package diagram
+![Package diagram](resources/readme/package-diagram.png)
 
+### Activity diagram
+![Activity diagram](resources/readme/activity-diagram.png)
+
+### Class diagram
+![Class diagram](resources/readme/class-diagram.png)
 
 ## Problem 2
 Below is a set of standard rules, just to mention a few, for a code to be valid:
