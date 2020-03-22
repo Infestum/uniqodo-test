@@ -22,7 +22,7 @@ For the following problem going to provide 3 UML diagrams:
 ![Activity diagram](resources/readme/activity-diagram.png)
 
 ### Class diagram
-![Class diagram](resources/readme/class-diagram.png)
+![Class diagram](resources/readme/class-diagram.png?3)
 
 ## Problem 2
 Below is a set of standard rules, just to mention a few, for a code to be valid:
