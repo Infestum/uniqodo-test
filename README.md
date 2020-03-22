@@ -16,13 +16,13 @@ For the following problem going to provide 3 UML diagrams:
 - Class diagram to show low level static structure of classifiers in a system and their relationships
 
 ### Package diagram
-![Package diagram](resources/readme/package-diagram.png)
+![Package diagram](resources/readme/_package-diagram.png)
 
 ### Activity diagram
-![Activity diagram](resources/readme/activity-diagram.png)
+![Activity diagram](resources/readme/_activity-diagram.png)
 
 ### Class diagram
-![Class diagram](resources/readme/class-diagram.png?3)
+![Class diagram](resources/readme/_class-diagram.png)
 
 ## Problem 2
 Below is a set of standard rules, just to mention a few, for a code to be valid:
