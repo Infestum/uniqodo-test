@@ -9,7 +9,6 @@ use Modules\Core\Contracts\IExceptionHandler;
 
 class AppBuilder implements IAppBuilder
 {
-
     protected IContext $context;
     protected ApplicationFactory $factory;
 
