@@ -1,6 +1,6 @@
 <?php
 
-use \App\Http\Controllers\Promocode\Controller as PromocodeController;
+use \App\Http\Controllers\Promocode\PromocodeController as PromocodeController;
 use \App\Http\Middlewares\Auth;
 
 use \Modules\Core\Http\{

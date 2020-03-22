@@ -8,7 +8,7 @@ class Promocode extends Model
 {
     protected string $table = 'promocodes';
 
-    public function getById(): self
+    public function getById($id): self
     {
     }
 }

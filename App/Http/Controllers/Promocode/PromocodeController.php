@@ -7,11 +7,12 @@ use App\Models\Promocode\Promocode;
 use App\Resources\PromocodeResource;
 use App\Services\UsageController;
 use Modules\Core\Contracts\IInput;
+use Modules\Core\Contracts\IOutput;
 
-class Controller extends \Modules\Core\Http\Abstractions\Controller
+class PromocodeController extends \Modules\Core\Http\Abstractions\Controller
 {
 
-    public function get(IInput $input)
+    public function get(IInput $input): IOutput
     {
         // Validation
         $validator = new PromocodeGetRequestValidator($input, $model = new Promocode());

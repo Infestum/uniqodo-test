@@ -32,7 +32,7 @@ Below is a set of standard rules, just to mention a few, for a code to be valid:
 - The code being checked by a client belongs to the client account
 - Has not exceeded its usage allowance
 
-Please note thatthis is notthe full list of rules.
+Please note that this is not the full list of rules.
 
 Please provide some codes for your classes here including methods necessary for validating a
 promotional code against the rules. You don’t have to show the complete code for the methods
@@ -40,9 +40,34 @@ just as long as they show intentions with classes and methods. Also, you can ign
 of the architecture like database queries here.
 
 ## Solution for problem #2
+In repository I've provided app prototype. Methods have some code or empty.
+My main focus was to decompose problems into separate classes. For validation strategy pattern would
+work the best. I just put general rules for it - depending on context this ruleset might be different.
+The current solution can be also improved by using Facade design pattern. I haven't used it for
+better readability and saving time.
 
 ## Problem 3
 Uniqodo would like to be notified about any unhandled exception that occurs in the API. What
 solution would you put in place in order to achieve this? A simple explanation will suffice here.   
 
 ## Solution for problem #3
+Create 2 separate modules:
+- SessionWatcher
+- ErrorHandler
+
+First one would watch and record all requested endpoints to table session_history. 
+This table would contain following fields:
+* id
+* route_name
+* route_id
+* status_code
+* exception_message
+For unhandled exception it will create a record with status_code 5xx with exception message.
+This module responsibility is just to record it to DB.
+
+ErrorHandler service can be added to cron or queue that would execute a command.
+That can provide reports in multiple formats depending on driver or context e.g. email, slack and etc.
+This module responsibility is to read from session_history and provide reports in readable format.
+
+Solution can be improved by adding a separate module SessionArchive. So all reported data
+can be archived to a separate table. 
